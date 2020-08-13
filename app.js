@@ -1,6 +1,12 @@
-const calculateBtn = document.querySelector('ion-button');
+const calculateBtn = document.getElementById('calc-btn');
+const resetBtn = document.getElementById('reset-btn');
 const heightInput = document.getElementById('height-input');
 const weightInput = document.getElementById('weight-input');
+
+const reset = () => {
+	heightInput.value = '';
+	weightInput.value = '';
+}
 
 const calculateBMI = () => {
 	let heightVal = +heightInput.value;
@@ -12,3 +18,4 @@ const calculateBMI = () => {
 }
 
 calculateBtn.addEventListener('click', calculateBMI);
+resetBtn.addEventListener('click', reset);

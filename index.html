@@ -21,7 +21,16 @@
 				<ion-label position="floating">Your Weight</ion-label>
 				<ion-input id="weight-input"></ion-input>
 			</ion-item>
-			<ion-button>CALCULATE</ion-button>
+			<ion-grid class="ion-text-center ion-margin-top">
+				<ion-row>
+					<ion-col>
+						<ion-button id="calc-btn">CALCULATE</ion-button>
+					</ion-col>
+					<ion-col>
+						<ion-button id="reset-btn">RESET</ion-button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
 			<div id="result"></div>
 		</ion-content>
 	</ion-app>
